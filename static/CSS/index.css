@@ -1,0 +1,141 @@
+* {
+  box-sizing: border-box;
+}
+html {
+  width: 100%;
+  height: 100%;
+}
+#firefox_wrap {
+  position: relative;
+}
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  font: 14px "microsoft yahei", Arial;
+  color: #fff;
+  text-align: center;
+  background: url(/static/IMG/bg.jpg) no-repeat;
+  background-color: #071e3a;
+}
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+
+ul,
+ol,
+li,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+dl,
+dt,
+dd,
+th,
+td,
+input,
+select,
+textarea {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+}
+a:hover {
+  color: #2cfcfc;
+  text-decoration: none;
+}
+img {
+  border: 0;
+  vertical-align: middle;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+p {
+  word-wrap: break-word;
+}
+@font-face {
+  font-family: SourceHanSansCN-Regular;
+  src: url("/static/FONT/SOURCEHANSANSCN-REGULAR.OTF");
+}
+@font-face {
+  font-family: FZCSJW;
+  src: url("/static/FONT/fzcst.ttf");
+}
+.fl {
+  float: left;
+}
+.fr {
+  float: right;
+}
+html::-webkit-scrollbar {
+  width: 0px;
+}
+html {
+  /*隐藏滚动条，当IE下溢出，仍然可以滚动*/
+  -ms-overflow-style: none;
+  /*火狐下隐藏滚动条*/
+  overflow:-moz-scrollbars-none;
+}
+
+.el-dialog .el-input__inner,
+.el-dialog .el-textarea__inner {
+  background: rgba(255, 255, 255, 0.4) !important;
+  color: #fff !important;
+}
+.el-input.is-disabled .el-input__inner {
+  color: #49f1e7 !important;
+  color: rgba(170,193,198,.7);
+}
+
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+  color: rgba(170,193,198,.7);
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+ color: rgba(170,193,198,.7);
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+  color: rgba(170,193,198,.7);
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: rgba(170,193,198,.7);
+}
+.scroll_content .-o-scrollbar{
+  -moz-appearance: none !important;   
+  background: rgba(0,255,0,0) !important;  
+}
+.scroll_content::-o-scrollbar-button    {
+  background-color:rgba(0,0,0,0);
+}
+.scroll_content::-o-scrollbar-track     {
+  background-color:rgba(0,0,0,0);
+}
+.scroll_content::-o-scrollbar-track-piece {
+  background-color:rgba(0,0,0,0);
+}
+.scroll_content::-o-scrollbar-thumb{
+  background-color:rgba(0,0,0,0);
+}
+.scroll_content::-o-scrollbar-corner {
+  background-color:rgba(0,0,0,0);
+}
+.scroll_content::-o-scrollbar-resizer  {
+  background-color:rgba(0,0,0,0);
+}
